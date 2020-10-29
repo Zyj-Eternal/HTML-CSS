@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>表格的操作</title>
+  </head>
+  <body>
+    <!--
+      标签:
+      table 定义表格
+      tr 定义表格行, 必须嵌套在 table
+      td(table data) 定义表格中的单元格, 必须嵌套在 tr
+      th 表头单元格, 居中显示加粗
+
+      属性:
+      align: 对其方式
+      border: 边框
+      cellpadding: 文本与边框距离
+      cellspacing: 边框与边框距离
+      width: 宽度
+      height: 高度
+    -->
+    <table cellpadding="20" border="1" cellspacing="0" width="500px" height="300px">
+      <tr><th>姓名</th> <th>性别</th> <th>年龄</th></tr>
+      <tr><td>张学友</td> <td>男</td> <td>56</td></tr>
+      <tr><td>周杰伦</td> <td>男</td> <td>50</td></tr>
+      <tr><td>刘亦菲</td> <td>女</td> <td>50</td></tr>
+    </table>
+  </body>
+</html>

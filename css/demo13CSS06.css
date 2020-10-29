@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    color: red;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+p.head {
+    text-align: center;
+}
+
+p.indent {
+    text-indent: 2em;
+}
