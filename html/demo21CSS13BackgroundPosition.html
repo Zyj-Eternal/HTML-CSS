@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+  <meta charset="UTF-8" >
+  <title >背景图片位置</title >
+  <style >
+    body {
+        background-image: url("../images/BigPic.jpg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        /*精确单位*/
+        /*如果参数值是精确值，那么第一个一定是x坐标，第二个一定是y*/
+        /*如果指定一个数值，那么该数值一定是x坐标，另一个默认垂直居中*/
+        /*固定图片*/
+        background-attachment: fixed;
+        /*background 规则: 背景颜色 背景图片地址 背景平铺 背景滚动 背景位置*/
+    }
+    div {
+        height: 200px;
+        width: 200px;
+        text-align: center;
+        line-height: 200px;
+        color: white;
+        background: rgba(0,0,0,0.5);
+    }
+  </style >
+</head >
+<body >
+  <div>Hello world</div>
+</body >
+</html >
