@@ -4,9 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>小说排行榜</title>
+    <style>
+      table {
+        width: 500px;
+        height: 250px;
+      }
+      th {
+        height: 45px;
+      }
+      table, td, th {
+        border: 1px solid pink;
+        font-size: 14px;
+        /* 合并相邻单元格 */
+        border-collapse: collapse;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <table border="1" cellspacing="0" width="400px" height="100px">
+    <table align="center" border="1" cellspacing="0" width="400px" height="100px">
       <tr><th>排名</th> <th>关键字</th> <th>今日搜索</th> <th>最近七日</th> <th>相关链接</th></tr>
       <tr><td>1</td> <td>鬼吹灯</td> <td>124</td> <td>324</td> <td><a href="#" target="_blank">贴吧</a><a href="#" target="_blank">图片</a><a href="#" target="_blank">百科</a></td></tr>
       <tr><td>2</td> <td>盗墓笔记</td> <td>212</td> <td>12</td> <td><a href="#" target="_blank">贴吧</a><a href="#" target="_blank">图片</a><a href="#" target="_blank">百科</a></td></tr>
