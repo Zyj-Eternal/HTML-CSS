@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距</title>
+    <style>
+        /* 外边距让块级盒子水平居中,满足如下条件:
+        盒子必须制定宽度
+        盒子左右外边距都设置为auto */
+        /* 注意: 行内元素或者行内块元素水平居中给其父元素添加text-align:cecnter 即可 */
+        /* div { 
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            margin: 100px auto;
+            text-align: center;
+        }
+        span {
+            color: white;
+        } */
+
+        .father {
+            height: 400px;
+            width: 400px;
+            background: red;
+            /* 当两个盒子向下移动分割会导致塌陷问题, 解决方法有三个:
+            1. 为父元素添加上边框
+            2. 为父元素添加内边距
+            3. 为父元素添加overflow: hidden; */
+            margin-top: 30px;
+            /* border-top: 1px solid transparent; */
+            /* padding-top: 1px; */
+            overflow: hidden;
+        }
+
+        .son {
+            height: 200px;
+            width: 200px;
+            background: pink;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div>
+        <span>文字元素</span>
+    </div> -->
+
+    <!-- 盒子的嵌套塌陷问题 -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>
