@@ -3,14 +3,32 @@
 <head >
   <meta charset="UTF-8" >
   <title >五彩导航</title >
+  <style >
+    .nav a {
+        display: inline-block;
+        height: 58px;
+        width: 120px;
+        background-color: pink;
+        text-align: center;
+        /*这样可以垂直居中，但是因为有小三角导致文字看着向下多一点, 只要line-height < 58px 就可以达到我们想要的效果*/
+        /*line-height: 58px;*/
+        line-height: 48px;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav .bg1 {
+        background: url("../images/bg1.png") no-repeat;
+    }
+
+    .nav .bg1:hover {
+        background: url("../images/bg11.png") no-repeat;
+    }
+  </style >
 </head >
 <body >
   <div class="nav">
-    <a href="#" >五彩导航</a >
-    <a href="#" >五彩导航</a >
-    <a href="#" >五彩导航</a >
-    <a href="#" >五彩导航</a >
-    <a href="#" >五彩导航</a >
+    <a href="#" class="bg1">五彩导航</a >
   </div>
 </body >
 </html >
