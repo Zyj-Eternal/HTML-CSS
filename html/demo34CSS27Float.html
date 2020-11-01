@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            color: white;
+        }
+        .fir {
+            float: left;
+        }
+        .sec {
+            /* 层叠性， 第二个框向右移动 */
+            /* float: right; */
+            height: 500px;
+            width: 500px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="fir">1</div>
+    <div class="sec">2</div>
+    <!-- 
+        PS: 任何元素添加浮动，都具有行内块的特性
+        浮动元素重要特性: 
+        1. 脱离标准普通流的控制(浮)移动到指定位置(动), 俗称脱标
+        2. 浮动的盒子不在保留原先的位置
+     -->
+</body>
+</html>

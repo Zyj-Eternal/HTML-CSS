@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米导航栏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+        ul, li {
+            list-style: none;
+        }
+        .box {
+            height: 460px;
+            width: 1226px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+        .left {
+            height: 460px;
+            width: 233px;
+            float: left;
+            overflow: hidden;
+        }
+        .left ul {
+            padding: 20px 0;
+        }
+        .left ul li {
+            height: 42px;
+            padding-left: 30px;
+            line-height: 42px;
+        }
+        .left ul li a {
+            display: block;
+            height: 42px;
+            width: 233px;
+        }
+        .left ul li a:hover {
+            background-color: orangered;
+        }
+        .right {
+            height: 460px;
+            width: 993px;
+            float: right;
+            overflow: hidden;
+        }
+        .right img {
+            display: inline-block;
+            width: 993px;
+            height: 460px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            <ul>
+                <li><a href="#">手机 电话卡</a></li>
+                <li><a href="#">电视 盒子</a></li>
+                <li><a href="#">笔记本 显示器</a></li>
+                <li><a href="#">家电 插线板</a></li>
+                <li><a href="#">出行 穿戴</a></li>
+                <li><a href="#">智能 路由器</a></li>
+                <li><a href="#">电源 配件</a></li>
+                <li><a href="#">健康 儿童</a></li>
+                <li><a href="#">耳机 音箱</a></li>
+                <li><a href="#">生活 箱包</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <img src="../images/9ebff5f5c1f52f2dbdd611897adbefd4.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>
