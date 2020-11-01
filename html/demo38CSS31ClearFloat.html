@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清除浮动</title>
+    <style>
+      /* 清除浮动本质: 清除浮动元素脱离标准流 */
+      /* 清除浮动策略是: 闭合浮动 */
+      /* 清楚浮动方法: 1 额外标签法（隔墙法），W3C推荐做法 2 父级添加 overflow 属性
+        3 父级添加 after 伪元素 4 父级添加双伪元素; */
+      .box {
+        /* overflow方法 */
+        /* overflow: hidden; */
+        width: 800px;
+        border: 1px solid #000;
+        margin: 0 auto;
+      }
+
+      /* 添加after伪元素 */
+      /* .clearfix:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+      }
+      .clearfix {
+          兼容IE6、7
+          *zoom: 1;
+      } */
+
+      /* 添加双伪元素 */
+      .clearfix::before,
+      .clearfix::after {
+        content: "";
+        display: table;
+      }
+      .clearfix::after {
+        clear: both;
+      }
+      .clearfix {
+        *zoom: 1;
+      }
+
+      .box .da {
+        width: 400px;
+        height: 200px;
+        background-color: purple;
+        float: left;
+      }
+
+      .box .er {
+        width: 400px;
+        height: 200px;
+        background-color: pink;
+        float: left;
+      }
+      .footer {
+        height: 200px;
+        background-color: black;
+      }
+      /* 隔墙法 */
+      /* .clear {
+        clear: both;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box clearfix">
+      <div class="da"></div>
+      <div class="er"></div>
+      <div class="clear"></div>
+    </div>
+    <div class="footer"></div>
+  </body>
+</html>
