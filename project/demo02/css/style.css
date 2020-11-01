@@ -219,11 +219,18 @@ li {
 .fine {
   height: 600px;
   margin-top: 35px;
-  background-color: pink;
+  background-color: #fff;
 }
 
 .fine .content {
   height: 558px;
+  position: relative;
+}
+
+.fine .content > img {
+  position: absolute;
+  top: 5px;
+  right: -2px;
 }
 
 .fine .content .last {
