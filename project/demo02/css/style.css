@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.w {
+  width: 1200px;
+  margin: auto;
+}
+
+.header {
+  height: 42px;
+  background-color: pink;
+  margin: 30px auto;
+}
+
+.header .logo {
+  height: 42px;
+  width: 198px;
+  float: left;
+  /* background-color: black; */
+}
+
+.header .nav {
+  float: left;
+  margin-left: 60px;
+}
+
+.header .nav li {
+  float: left;
+}
+
+.header .nav li a {
+  display: block;
+  height: 40px;
+  line-height: 42px;
+  color: #000;
+  /* 利用padding撑开li标签 */
+  padding: 0 10px;
+  /* border: 1px solid #00a4ff; */
+}
+
+.header .nav li a:hover {
+  border-bottom: 2px solid #00a4ff;
+  color: #00a4ff;
+}
+
+/* search搜索框 */
+.header .search {
+  float: left;
+  height: 42px;
+  width: 410px;
+  margin-left: 50px;
+  background-color: skyblue;
+}
+
+.search input {
+  float: left;
+  width: 345px;
+  height: 40px;
+  border: 1px solid #00a4ff;
+  border-right: none;
+  font-size: 14px;
+  color: #bfbfbf;
+  padding-left: 15px;
+}
+
+.search button {
+  float: left;
+  width: 49px;
+  height: 42px;
+  border: none;
+  background: black;
+  background: url(../images/btn.png);
+}
