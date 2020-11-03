@@ -1,0 +1,104 @@
+/* 头部制作 */
+/* #4cd964,
+#5ac8fa,
+#007aff,
+#34aadc,
+#5856d6,
+#ff2d55  */
+header {
+  display: block;
+  height: 60px;
+  background-color: #1c2327;
+}
+
+header .top {
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(
+    to left,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+}
+
+/* logo */
+header .logo {
+  float: left;
+  line-height: 56px;
+}
+
+header .logo a {
+  color: #fff;
+  font-size: 22px;
+  margin-right: 60px;
+}
+
+header .logo a span {
+  font-size: 16px;
+}
+
+header .con {
+  float: left;
+}
+
+header .con li {
+  float: left;
+}
+
+header .con li a {
+  display: inline-block;
+  padding: 0 15px;
+  height: 56px;
+  line-height: 56px;
+  color: #fff;
+  position: relative;
+}
+
+header .con li a.menu::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  top: 50%;
+  margin-top: -4px;
+  right: 4px;
+  background: url("../images/jt.webp") no-repeat;
+  transition: all 0.5s ease;
+}
+
+header ul.con li a.red {
+  color: red;
+}
+
+header ul.con li a:not(.red):hover {
+  color: #00c1de;
+  /* left: 40px; */
+}
+
+/* 当鼠标移动到标签时,旋转 */
+header ul.con li a.menu:hover::after {
+  color: #00c1de;
+  /* transform: rotateY(90deg); */
+  transform: rotate(180deg);
+}
+
+header .searchicon {
+  float: right;
+  margin-right: 15px;
+  position: relative;
+}
+
+.searchicon .icon {
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  top: 50%;
+  margin-top: 13px;
+}
