@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>过度属性</title>
+    <style>
+      /* 谁做过渡给谁加 */
+      div {
+        height: 500px;
+        width: 500px;
+        background-color: pink;
+        transition: all 1.5s ease-in-out;
+      }
+
+      div:hover {
+        width: 30px;
+        height: 30px;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

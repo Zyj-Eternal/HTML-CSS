@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>进度条</title>
+    <style>
+      div {
+        box-sizing: border-box;
+        position: relative;
+        height: 8px;
+        width: 100px;
+        background-color: transparent;
+        margin: 200px auto;
+        border-radius: 5px;
+        border: 1px solid red;
+      }
+      div::after {
+        content: "";
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        height: 7px;
+        width: 0px;
+        background-color: red;
+        border-radius: 5px;
+        transition: all 5s;
+      }
+      div:hover::after {
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

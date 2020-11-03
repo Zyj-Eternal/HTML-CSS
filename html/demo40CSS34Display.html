@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>元素的显示与隐藏</title>
+    <style>
+      .tudou {
+        position: relative;
+        height: 252px;
+        width: 448px;
+        margin: 100px auto;
+        background-color: pink;
+      }
+      .tudou img {
+        /* 随父亲高度撑开 */
+        width: 100%;
+        height: 100%;
+      }
+      .mask {
+        display: none;
+        position: absolute;
+        /* 通过父亲元素撑开mask */
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.4) url("../images/arr.png") no-repeat center;
+      }
+
+      .tudou:hover .mask {
+        /* 当鼠标经过时，让里面的遮罩层显示出来 */
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+          display: none(隐藏) | display(转换为块级元素及显示)
+          特点: 不保留位置
+       -->
+    <!-- visibility: hidden(隐藏) | visible(可见)  
+         特点: 保留位置
+    -->
+    <!-- 
+        overflow: visible(可见) | hidden(隐藏超出的部分) | auto(溢出显示滚动条) | scroll(不溢出也显示滚动条)
+     -->
+    <div class="tudou">
+      <div class="mask"></div>
+      <img src="../images/tudou.jpg" alt="" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>固定定位小技巧</title>
+    <!-- <style>
+      .w {
+        height: 1200px;
+        width: 800px;
+        background-color: pink;
+        margin: 0 auto;
+      }
+
+      .fixed {
+        position: fixed;
+        /* 走到浏览器中间位置 */
+        left: 50%;
+        /* 通过margin移动到边缘 */
+        margin-left: 400px;
+        width: 50px;
+        height: 150px;
+        background-color: skyblue;
+      }
+    </style> -->
+    <!-- <style>
+      /* 绝对定位居中元素 */
+      .box {
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        left: 50%;
+        /* margin: 0 auto; */
+        margin-left: -250px;
+        background-color: black;
+      }
+    </style> -->
+    <style>
+      .box {
+        float: left;
+        width: 150px;
+        height: 150px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="fixed"></div>
+    <div class="w">版心盒子</div> -->
+    <div class="box"></div>
+    <p>
+      浮动元素不会压住下面标准流的文字(浮动产生的目地最初是为了作出文字环绕效果)
+      绝对定位(固定定位)会压住下面标准流所有的内容
+    </p>
+  </body>
+</html>
