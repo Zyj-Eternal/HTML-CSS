@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>宽度calc函数</title>
+    <style>
+      .father {
+        width: 300px;
+        height: 200px;
+        background-color: pink;
+      }
+
+      .son {
+        /* width: 100%; */
+        /* calc 可以使用加减乘除 */
+        width: calc(100% - 30px);
+        height: 50px;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </body>
+</html>

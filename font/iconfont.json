@@ -1,0 +1,30 @@
+{
+  "id": "2173082",
+  "name": "demo01",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "17967604",
+      "name": "待付款",
+      "font_class": "daifukuan",
+      "unicode": "ee8d",
+      "unicode_decimal": 61069
+    },
+    {
+      "icon_id": "17967605",
+      "name": "待发货",
+      "font_class": "daifahuo",
+      "unicode": "ee8e",
+      "unicode_decimal": 61070
+    },
+    {
+      "icon_id": "17967606",
+      "name": "待收货",
+      "font_class": "daishouhuo",
+      "unicode": "ee8f",
+      "unicode_decimal": 61071
+    }
+  ]
+}

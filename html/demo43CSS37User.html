@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>用户界面样式</title>
+    <style>
+      img {
+        /* 居中对齐 */
+        /* 行内块元素都可以进行垂直剧中(默认为基线对齐) */
+        vertical-align: middle;
+      }
+      input,
+      textarea {
+        /* 取消表单轮廓 */
+        outline: none;
+      }
+      textarea {
+        resize: none;
+      }
+      div {
+        height: 50px;
+        width: 50px;
+        /* 强制一行内显示 */
+        white-space: nowrap;
+        /* 隐藏 */
+        overflow: hidden;
+        /* 用省略号代替超出部分 */
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 取消表单轮廓 -->
+    <input type="text" />
+    <!-- 防止拖拽文本域 -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <!-- 文字的垂直对其 -->
+    <!-- 溢出文字省略号显示 -->
+    <div>省略一万字</div>
+  </body>
+</html>
