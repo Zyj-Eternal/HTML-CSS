@@ -1,0 +1,26 @@
+/* 初始化样式文件 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
