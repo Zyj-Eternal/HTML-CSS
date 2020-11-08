@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>定位的小测试</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      main {
+        height: 500px;
+        width: 500px;
+        border: 1px solid #555;
+        margin: 100px auto;
+      }
+
+      main article {
+        width: 150px;
+
+        font-size: 14px;
+        color: #333;
+        margin: 100px;
+        position: relative;
+      }
+      main article div {
+        text-align: center;
+        border: 1px solid #333;
+        height: 35px;
+        width: 150px;
+        line-height: 35px;
+        box-sizing: border-box;
+        border: solid 2px blueviolet;
+      }
+
+      main article div:first-of-type {
+        position: relative;
+        right: -150px;
+        top: 2px;
+        z-index: 2;
+        cursor: pointer;
+        background: #fff;
+        /* border: 1px solid red; */
+      }
+
+      main article div:nth-of-type(2) {
+        display: none;
+        position: absolute;
+        /* top: 36px; */
+        /* top: 0; */
+        width: 300px;
+        height: 60px;
+        line-height: 60px;
+        z-index: 1;
+        /* border: 1px solid green; */
+      }
+
+      main article:hover div:first-of-type {
+        /* display: block; */
+        border-bottom: none;
+      }
+      main article:hover div:nth-of-type(2) {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <div>我的购物车</div>
+        <div>购物车中暂无商品</div>
+      </article>
+    </main>
+  </body>
+</html>

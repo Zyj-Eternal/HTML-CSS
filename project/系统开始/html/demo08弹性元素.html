@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹性元素</title>
+    <style>
+      section {
+        display: flex;
+        /* height: 500px; */
+        width: 300px;
+        box-sizing: border-box;
+        border: 5px solid silver;
+        margin: 100px auto;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+      }
+
+      section div {
+        height: 100px;
+        width: 200px;
+        box-sizing: border-box;
+        /* 将剩下的元素以1:1比例撑开剩下空间 */
+        /* flex-grow: 1; */
+        /* 当 flex-shrink 为0 时， 显示任何元素都不缩小, 不可与flex-wrap同用 */
+        /* flex-shrink: 0; */
+        /* max-height(min-height) > flex-basis(基准尺寸) > height */
+        /* flex-basis: 100px; */
+        /* 第一个放、缩、基准尺寸 */
+        flex: 1 1 100px;
+        /* 对元素进行单个设置 */
+        /* align-self: center; */
+        background: red;
+        background-clip: content-box;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #333;
+        font-size: 16px;
+        color: #fff;
+      }
+
+      section :first-child {
+        /* 和z-index很像， 数值越大越靠后 */
+        order: 1;
+      }
+
+      section div:first-child {
+        flex-grow: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </section>
+  </body>
+</html>

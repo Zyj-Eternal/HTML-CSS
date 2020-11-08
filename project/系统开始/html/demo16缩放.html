@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>缩放</title>
+    <style>
+      article {
+        height: 300px;
+        width: 300px;
+        border: 3px solid silver;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform-style: perspective-3d;
+        transform: perspective(900px) rotateY(45deg);
+        position: relative;
+      }
+
+      article div {
+        height: 100px;
+        width: 100px;
+        /* background-color: #e74c3c; */
+        /* transition: 1s; */
+      }
+
+      article div:nth-of-type(1) {
+        background-color: #e74c3c;
+        transform: translateZ(-300px);
+        transform: perspective(900px) rotateY(45deg);
+      }
+
+      article div:nth-of-type(2) {
+        position: absolute;
+        background-color: #9b59b6;
+        transition: 1s;
+        transform: translateZ(-300px);
+        transform: perspective(900px) rotateY(45deg) translateZ(-300px);
+      }
+
+      /* article div:nth-of-type(1):hover { */
+      /* scale 第一个参数为 宽度, 第二个参数为 高度 */
+      /* transform: translateZ(-300px) scale(1.2, 0.5); */
+      /* transform: translateZ(-900px); */
+      /* } */
+      article div:nth-of-type(2):hover {
+        /* transform: perspective(900px) rotateY(45deg) scale(0.5); */
+        transform: perspective(900px) rotateY(45deg) scale3d(2, 2, 6);
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <div></div>
+      <div></div>
+    </article>
+  </body>
+</html>

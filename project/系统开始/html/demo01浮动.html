@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>浮动</title>
+    <style>
+      main {
+        border: 1px solid #555;
+        overflow: hidden;
+        /* height: 300px; */
+      }
+      main div {
+        margin: 10px;
+      }
+      main div:nth-of-type(1) {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: blueviolet;
+      }
+      main div:nth-of-type(2) {
+        /* 这样2号块级元素就清除了浮动 */
+        /* clear: both; */
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: skyblue;
+      }
+      main div:nth-of-type(3) {
+        float: left;
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+      }
+      /* 在父元素后添加伪类, 因为父元素是没有浮动的，所有元素只能在下面显示，浏览器以此包含 */
+      /* main::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- 浮动对前面的元素是没有影响的 -->
+    <!-- 如果给地一个元素浮动，后面不浮动会占用地一个元素的空间 -->
+    <!-- 记住: 一浮都浮动 -->
+    <!-- 元素浮动后，就会变成块级元素 -->
+    <!-- clear:both 是为了清除浮动 -->
+    <!-- 使用after伪类元素给父元素添加标签，清除浮动 -->
+    <!-- 父元素触发BFC机制:即父元素的高度计算会包括浮动元素的高度。 -->
+    <main>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+  </body>
+</html>

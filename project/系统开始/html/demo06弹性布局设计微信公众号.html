@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹性布局设计微信公众号</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        color: #666;
+      }
+
+      /* 撑开内容部分 */
+      main {
+        flex: 1;
+      }
+
+      footer {
+        /* 定义脚部大小及元素排列方式 */
+        height: 50px;
+        background: blue;
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      footer section {
+        display: flex;
+        flex: 1 0;
+        flex-direction: column-reverse;
+        border-right: 1px solid #555;
+        border-top: 1px solid #555;
+      }
+
+      footer section:last-child {
+        border-right: none;
+      }
+
+      footer section h4 {
+        /* 把ul标签挤出去 */
+        flex: 0 0 50px;
+        display: flex;
+        text-align: center;
+        /* 将h4标签放到中间 */
+        flex-direction: column-reverse;
+        justify-content: center;
+        cursor: pointer;
+        color: #fff;
+      }
+
+      footer section ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #555;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        margin: 5px;
+      }
+
+      footer section ul li {
+        /* 将空间分给弹性 元素, 空间大小为50px */
+        flex: 1 0 50px;
+        border-bottom: 1px solid #555;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      footer section ul li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main></main>
+    <footer>
+      <section>
+        <h4>教程</h4>
+        <ul>
+          <li>PHP</li>
+          <li>LINUX</li>
+        </ul>
+      </section>
+      <section>
+        <h4>直播</h4>
+      </section>
+    </footer>
+  </body>
+</html>

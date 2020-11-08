@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>控制元素移动</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <style>
+      article {
+        height: 500px;
+        width: 500px;
+        border: 3px solid silver;
+        margin: 100px auto;
+        position: relative;
+      }
+
+      article div {
+        margin: 20px;
+      }
+      article div:nth-of-type(1) {
+        height: 100px;
+        width: 100px;
+        background-color: #3498db;
+        transform: perspective(900px) rotateY(45deg);
+        transition: 1s;
+      }
+
+      article div:nth-of-type(2) {
+        /* Y轴的移动(负数反向移动) */
+        position: absolute;
+        top: 0;
+        height: 100px;
+        width: 100px;
+        background-color: #8e44ad;
+        transition: 1s;
+        transform: perspective(900px) rotateY(45deg);
+      }
+      /*
+            article div:nth-of-type(1):hover {
+              X轴的移动(同上)
+              transform: translateX(100px);
+            } */
+
+      article div:nth-of-type(2):hover {
+        /* transform: translateY(100px); */
+        /* transform: translate(100px, 100px); */
+        transform: perspective(900px) rotateY(45deg) translateZ(200px);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article>
+        <div></div>
+        <div></div>
+      </article>
+    </main>
+  </body>
+</html>

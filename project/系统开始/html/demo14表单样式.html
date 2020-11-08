@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>设置简单样式</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <style>
+      body {
+        background-color: #34495e;
+      }
+
+      input {
+        outline: none;
+        border: none;
+      }
+
+      article {
+        border: 3px solid silver;
+        height: 300px;
+        width: 300px;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .field {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .field::before {
+        content: "";
+        height: 1px;
+        width: 197px;
+        position: absolute;
+        bottom: 19px;
+        left: 0;
+        background: linear-gradient(to right, white, #9b59b6, #3498db, white);
+        transform: translateX(-100%);
+        transition: 1s;
+      }
+
+      .field input {
+        padding: 10px;
+        margin: 20px;
+      }
+
+      .field:hover::before {
+        transform: translateX(20px);
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <div class="field">
+        <input type="text" placeholder="username" />
+      </div>
+      <div class="field">
+        <input type="text" placeholder="password" />
+      </div>
+    </article>
+  </body>
+</html>

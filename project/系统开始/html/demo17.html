@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>缩放菜单</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <style>
+      main {
+        height: 500px;
+        width: 500px;
+        border: 3px solid silver;
+        margin: 100px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main ul {
+        display: flex;
+        flex-direction: row;
+      }
+
+      main ul li {
+        /* border: 1px solid silver; */
+        margin: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      main ul li:hover strong + div {
+        transform: scale(1);
+      }
+
+      main ul li strong {
+        padding: 5px 30px;
+        /* margin-right: 10px; */
+        background-color: #2ecc71;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      main ul li strong + div {
+        display: flex;
+        font-size: 1.2em;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        background-color: #34495e;
+        padding: 5px;
+        transform: scale(0);
+        transition: 1s;
+        transform-origin: top left;
+      }
+
+      main ul li div a {
+        color: #fff;
+        padding: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <ul>
+        <li>
+          <strong>video</strong>
+          <div>
+            <a href="#">PHP</a>
+            <a href="#">HTML</a>
+          </div>
+        </li>
+        <li>
+          <strong>live</strong>
+          <div>
+            <a href="#">LINUX</a>
+            <a href="#">SHELL</a>
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

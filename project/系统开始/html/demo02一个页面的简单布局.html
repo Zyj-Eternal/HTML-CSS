@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>一个页面的简单布局</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      main {
+        height: 800px;
+        width: 1200px;
+        border: 1px solid #555;
+        margin: 100px auto;
+      }
+      main section:first-of-type {
+        /* margin: 10px; */
+        height: 590px;
+        width: 1180px;
+        margin: 10px 10px 0;
+        border: 1px solid #333;
+      }
+      main section:first-of-type .left {
+        float: left;
+        height: 565px;
+        width: 640px;
+        border: 1px solid #333;
+        margin: 10px;
+      }
+      main section:first-of-type .right {
+        float: right;
+        height: 565px;
+        width: 496px;
+        border: 1px solid #333;
+        margin: 10px;
+      }
+      main section:nth-of-type(2) {
+        height: 180px;
+        width: 1180px;
+        border: 1px solid #555;
+        margin: 10px 10px 0;
+      }
+      main section:nth-of-type(2) .smallboxleft {
+        float: left;
+        height: 160px;
+        width: 160px;
+        border: 1px solid #333;
+        margin: 10px;
+      }
+      main section:nth-of-type(2) .smallboxright {
+        float: left;
+        height: 160px;
+        width: 978px;
+        border: 1px solid #333;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="left"></div>
+        <div class="right"></div>
+      </section>
+      <section>
+        <div class="smallboxleft"></div>
+        <div class="smallboxright"></div>
+      </section>
+    </main>
+  </body>
+</html>

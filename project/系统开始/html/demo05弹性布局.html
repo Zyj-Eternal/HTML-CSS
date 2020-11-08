@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>弹性布局</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* div.container {
+        display: flex;
+        height: 100vh;
+        justify-content: space-evenly;
+      }
+
+      div.container div {
+        border: 1px solid #ddd;
+      }
+
+      div.container div:nth-of-type(1) {
+        min-width: 80px;
+        background: #4e9166;
+      }
+      div.container div:nth-of-type(2) {
+        flex: 1;
+        background: #ddd;
+      } */
+
+      div.container {
+        /* height: 150px; */
+        width: 800px;
+        margin: 100px;
+        outline: solid 5px silver;
+        /* 声明为弹性盒子，默认水平排列 */
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        padding: 20px;
+        /* 必要时候可以换行，在使用弹性盒子时，最好不要确定高度，以内容撑开盒子， 一般在父元素中定义 */
+        flex-wrap: wrap;
+        /* 用于控制元素在主轴上的排列方式，再次强调是主轴的排列方式。 */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        justify-content: space-evenly; /* 常用 */
+        /* space-between	第一个元素靠起点，最后一个元素靠终点，余下元素平均分配空间 */
+        /* center	元素从弹性容器中心开始 */
+        /* space-evenly	元素间距离平均分配 */
+
+        /* align-items 用于控制容器元素在交叉轴上的排列方式。 */
+        /* stretch	元素被拉伸以适应容器（默认值）
+        center	元素位于容器的中心
+        flex-start	元素位于容器的交叉轴开头
+        flex-end	元素位于容器的交叉轴结尾 */
+        align-items: flex-end;
+
+        /* align-content 只适用于多行显示的弹性容器，用于控制行（而不是元素）在交叉轴上的排列方式。
+
+        选项	说明
+        stretch	将空间平均分配给元素
+        flex-start	元素紧靠主轴起点
+        flex-end	元素紧靠主轴终点
+        center	元素从弹性容器中心开始
+        space-between	第一个元素靠起点，最后一个元素靠终点，余下元素平均分配空间
+        space-around	每个元素两侧的间隔相等。所以，项目之间的间隔比项目与边框的间隔大一倍
+        space-evenly	元素间距离平均分配 */
+
+        /* flex-grow: 1; */
+      }
+      div.container div {
+        outline: solid 5px blueviolet;
+        text-align: center;
+        font-size: 22px;
+        line-height: 150px;
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 容器盒子里面包含着容器元素，使用 display:flex 或 display:inline-flex 声明为弹性盒子。 -->
+    <!-- flex-direction 用于控制盒子元素排列方向 [row, row-reverse, column, column-reverse] -->
+    <!-- flex-wrap 属性规定flex容器是单行或者多行，同时横轴的方向决定了新行堆叠的方向。[nowrap, wrap, wrap-reverse] -->
+    <!-- flex-flow 是 flex-direction 与 flex-wrap 的组合简写模式。 -->
+
+    <!-- 弹性元素 放在容器盒子中的元素即为容器元素。 不能使用float与clear规则
+    弹性元素均为块元素 绝对定位的弹性元素不参与弹性布局 -->
+    <!-- 用于控制单个元素在交叉轴上的排列方式，align-items 用于控制容器中所有元素的排列，而 align-self 用于控制一个弹性元素的交叉轴排列 -->
+    <!-- 选项	说明
+    stretch	将空间平均分配给元素
+    flex-start	元素紧靠主轴起点
+    flex-end	元素紧靠主轴终点
+    center	元素从弹性容器中心开始 -->
+
+    <!-- flex-grow 用于将弹性盒子的可用空间，分配给弹性元素。可以使用整数或小数声明。 -->
+    <div class="container">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+  </body>
+</html>

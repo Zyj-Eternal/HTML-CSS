@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>移动端样式</title>
+    <link rel="stylesheet" href="../css/base.css" />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      main > div {
+        position: absolute;
+        top: -94vh;
+        left: 0;
+        height: 94vh;
+        width: 100%;
+        /* background-color: #3498db; */
+        transition: 1s;
+      }
+
+      main > div:target {
+        transform: translateY(94vh);
+      }
+
+      main > div:nth-of-type(1):target {
+        background-color: #3498db;
+      }
+
+      main > div:nth-of-type(2):target {
+        background-color: #e74c3c;
+      }
+
+      main > div:nth-of-type(3):target {
+        background-color: #d35400;
+      }
+
+      footer {
+        height: 8vh;
+        background-color: #2c3e50;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 0 0;
+        justify-content: space-evenly;
+      }
+
+      footer a {
+        padding: 10px;
+        color: #fff;
+        text-transform: uppercase;
+        flex: 1;
+        text-align: center;
+        font-size: 1em;
+      }
+
+      footer a:nth-of-type(2) {
+        border-right: 1px solid #95a5a6;
+        border-left: 1px solid #95a5a6;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="home"></div>
+      <div id="video"></div>
+      <div id="live"></div>
+    </main>
+    <footer>
+      <a href="#home">home</a>
+      <a href="#video">video</a>
+      <a href="#live">live</a>
+    </footer>
+  </body>
+</html>
