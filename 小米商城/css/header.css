@@ -1,0 +1,139 @@
+header {
+    display: flex;
+    width: 100vw;
+    height: 40px;
+    background-color: #333;
+}
+
+header div.left {
+    float: left;
+}
+
+header div.left ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+header div.left ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+}
+
+header div.left ul li:hover a{
+    color: #fff;
+}
+
+header div.left ul li:not(.last)::after {
+    content: "";
+    display: inline-flex;
+    height: 14px;
+    width: 1px;
+    background-color:#424242;
+    position: absolute;
+    right: 6px;
+}
+
+header div.left ul li a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    width: 100%;
+    padding-right: 15px;
+}
+
+header div.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header div.right ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header div.right ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+}
+
+header div.right ul li:hover  a {
+    color: #fff;
+}
+
+
+header div.right ul li a {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-right: 20px;
+    color: #b0b0b0;
+    font-size: 12px;
+
+}
+
+header div.right ul li:not(.last)::after{
+    content: "";
+    display: inline-flex;
+    height: 14px;
+    width: 1px;
+    background-color:#424242;
+    position: absolute;
+    right: 9px;
+
+}
+
+header div.right div.shop {
+    display: inline-flex;
+    width: 120px;
+    height: 40px;
+    background-color: #424242;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    /*transition: all .5s ease;*/
+    /*overflow: hidden;*/
+}
+
+header div.right div.shop:hover {
+    /*background-color: #fff;*/
+    color: #ff6700;
+}
+
+header div.right div.shop:hover div.gouwuche {
+    transform:translateY(103px);
+    color: #333;
+}
+
+header div.right div.shop span {
+    margin-right: 10px;
+}
+
+header div.right div.gouwuche {
+    height: 100px;
+    width: 320px;
+    /*border: 1px solid #333;*/
+    position: absolute;
+    color: #333;
+    top: -63px;
+    right: 0;
+    text-align: center;
+    line-height: 100px;
+    font-size: 12px;
+    box-shadow: 0 0 2px #424242;
+    transition: all .5s ease;
+    z-index: 100;
+}
+

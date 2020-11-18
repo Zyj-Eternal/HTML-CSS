@@ -1,0 +1,94 @@
+nav {
+    height: 88px;
+    background-color: #fff;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+nav div.logo {
+    /* float: left; */
+    height: 49px;
+    width: 49px;
+    background: url("../images/mi-logo.png") repeat;
+    /* color: #ff6700; */
+    background-color: #ff6700;
+    margin-right: 200px;
+    cursor:pointer;
+}
+
+nav div.nav {
+    display: flex;
+    /* float: left; */
+}
+
+nav div.nav ul {
+    display: flex;
+}
+
+nav div.nav ul li {
+    display: inline-flex;
+    /* justify-content:flex-end; */
+    /* padding-right: 15px; */
+    height: 88px;
+    line-height:88px;
+}
+
+nav div.nav ul li a {
+    display: inline-block;
+    height: 88px;
+    padding-right: 20px;
+    color: #333;
+}
+
+nav div.nav ul li:hover a {
+    color: #ff6700;
+}
+
+nav div.search {
+    /* float: right; */
+    position:absolute;
+    right: 0;
+}
+
+nav div.search div {
+    float: right;
+    height: 49px;
+    width: 49px;
+    border: 1px solid #eee;
+    line-height:49px;
+    text-align: center;
+}
+
+nav div.search input {
+    height: 49px;
+    border: 1px solid #eee;
+    position: absolute;
+    right: 48px;
+    width: 250px;
+    outline: none;
+    padding-left: 10px;
+}
+
+nav div.search input:hover{
+    border: 1px solid #e0e0e0;
+    /* border: 1px solid red; */
+}
+
+nav div.search input:hover +div {
+    border: 1px solid #e0e0e0;
+}
+
+nav div.search div .icon-sousuosearch82 {
+    display: block;
+    font-size: 30px;
+    height: 49px;
+    width: 49px;
+}
+
+nav div.search div:hover .icon-sousuosearch82{
+    color: #fff;
+    background-color: #ff6700;
+}
+
