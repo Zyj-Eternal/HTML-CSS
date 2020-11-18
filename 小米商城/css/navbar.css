@@ -1,0 +1,123 @@
+div.navbar {
+    height: 460px;
+    /* background: rgba(105,101,101,.6); */
+    background-image: url("../images/3.webp");
+}
+
+div.navbar section {
+    height: 460px;
+}
+
+div.navbar section ul.left{
+    display:flex;
+    flex-direction:column;
+    float:left;
+    width: 240px;
+    padding: 20px 0;
+    background: rgba(105,101,101,.6);
+}
+
+div.navbar section ul.left li {
+    display:inline-flex;
+    box-sizing: border-box;
+    flex-direction:column;
+    justify-content:space-between;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 25px;
+}
+
+
+div.navbar section ul.left li a{ 
+    display:inline-block;
+    color: #fff;
+    position: relative;
+    font-size: 13px;
+}
+
+div.navbar section ul.left li a span {
+    position: absolute;
+    right: 0;
+    padding-right: 25px;
+    font-size: 20px;
+}
+
+div.navbar section ul.left li:hover {
+    background-color: #ff6700;
+}
+
+div.navbar section div.right {
+    float: right;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+div.navbar section div.right ul {
+    width: 100px;
+    height: 25px;
+    /* background-color: pink; */
+    position: absolute;
+    bottom: -440px;
+    right: 35px;
+    display:flex;
+    align-items: center;
+}
+
+div.navbar section div.right ul li {
+    /* float: left; */
+    display:flex;
+    flex-direction: row;
+    /* align-items:center; */
+    height: 10px;
+    width: 10px;
+    /* padding: 0 10px; */
+    margin: 0 5px;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 50%;
+    line-height: 25px;
+    border-color: hsla(0,0%,100%,.3);
+    border: 2px solid rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+div.navbar section div.right ul li:hover {
+    background-color: #fff;   
+}
+
+div.navbar section div.right ul li:nth-of-type(5){
+    background-color: #fff;
+}
+
+div.navbar section div.right div.prev {
+    position: absolute;
+    background-image: url("../images/icon-slides.png");
+    background-position: -85px 0;
+    background-repeat: no-repeat;
+    height: 69px;
+    width: 41px;
+    top: 180px;
+    left: -986px;
+    cursor: pointer;
+}
+
+div.navbar section div.right div.next {
+    position: absolute;
+    background-image: url("../images/icon-slides.png");
+    background-repeat: no-repeat;
+    background-position: -127px 0;
+    height: 69px;
+    width: 41px;
+    top: 180px;
+    left: -41px;
+    cursor: pointer;
+}
+
+div.navbar section div.right div.prev:hover {
+    background-image: url("../images/icon-slides.png");
+    background-position: 0 0;
+}
+
+div.navbar section div.right div.next:hover {
+    background-image: url("../images/icon-slides.png");
+    background-position: -42px 0;
+}
