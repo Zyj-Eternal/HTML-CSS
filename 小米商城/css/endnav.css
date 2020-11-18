@@ -28,6 +28,10 @@ div.navbar div.endNav div.small ul li{
     box-sizing: border-box
 }
 
+div.navbar div.endNav div.small ul li:hover a{
+    color: #fff;
+}
+
 div.navbar div.endNav div.small ul li a::before{
     content: "";
     height: 64px;

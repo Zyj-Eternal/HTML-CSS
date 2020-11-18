@@ -1,0 +1,108 @@
+/* background-color: #f5f5f5 */
+main {
+    /* display: flex;
+    flex: 1; */
+    background-color: #f5f5f5;
+    height: 100vh;
+    margin-top: 215px;
+}
+
+main .xmShanGou {
+    height: 400px;
+}
+
+main .xmShanGou h1 {
+    font-size: 22px;
+    line-height: 58px;
+    float: left;
+    font-weight: 200;
+    color: #333;
+}
+
+main .xmShanGou div.right {
+    float: right;
+    margin-top: 20px;
+}
+
+main .xmShanGou div.right span {
+    display: inline-block;
+    height: 24px;
+    width: 36px;
+    border: 2px solid #e0e0e0;
+    text-align: center;
+    line-height:21px;
+    color: #b0b0b0;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+main .xmShanGou div.right span:hover {
+    color: #ff6709;
+}
+
+main .xmShanGou div.main {
+    height: 330px;
+}
+
+main .xmShanGou div.main div.content {
+    margin-top: 55px;
+    height: 330px;
+}
+
+main .xmShanGou div.main div.content div.left {
+    float: left;
+    height: 330px;
+    width: 240px;
+    background-color: #f1eded;
+    border-top: 1px solid red;
+    position: relative;
+    left: -88px;
+}
+
+main .xmShanGou div.main div.content div.left h1 {
+    font-size: 21px;
+    font-weight: 200;
+    color: #ef3a3b;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+main .xmShanGou div.main div.content div.left>span {
+    display: block;
+    font-size: 60px;
+    margin-top: 95px;
+    color: #ef3a3b;
+    text-align: center;
+}
+
+main .xmShanGou div.main div.content div.left p.span {
+    margin-top:30px;
+    text-align: center;
+    font-weight: 200;
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+
+main .xmShanGou div.main div.content div.left p.time {
+    margin-top: 40px;
+    text-align: center;
+}
+
+main .xmShanGou div.main div.content div.left p.time span {
+    display: inline-block;
+    height: 46px;
+    width: 46px;
+    background-color: #605751;
+    color: #fff;
+    font-size: 24px;
+    line-height:46px;
+}
+
+main .xmShanGou div.main div.content div.left p.time i {
+    font-size: 18px;
+    color: #605751;;
+}
+
+main.xmShanGou div.main div.content div.right {
+    
+}
